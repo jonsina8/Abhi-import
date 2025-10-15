@@ -48,7 +48,7 @@ auth_channel = environ.get('AUTH_CHANNEL', '-1002346311796')  # Channel/Group ID
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002474691060').split()]
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '1002534409808')  # Support group id (make sure bot is admin)
 reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002346311796')  # Request channel id (make sure bot is admin)
-AUTH_CHANNEL = [int(fch) if id_pattern.search(fch) else fch for fch in environ.get('AUTH_CHANNEL', '-1002321973166').split()]
+AUTH_CHANNEL = [int(fch) if id_pattern.search(fch) else fch for fch in environ.get('AUTH_CHANNEL', '-1002520793005').split()]
 MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '-1002346311796').split() if re.match(r'^-?\d+$', channel_id)]  # Channel for force sub (make sure bot is admin)
 
 
@@ -94,7 +94,7 @@ IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
 # Channel & Group Links Configuration
 # ============================
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+Ak9u-iW4Lps5MjFl')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/movies_updet')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Movie_house_club')
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Abhikumar7799')
 DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK = environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/movies_updet')
 OWNERID = int(os.environ.get('OWNERID', '1234567890'))  # Replace with the actual admin ID
